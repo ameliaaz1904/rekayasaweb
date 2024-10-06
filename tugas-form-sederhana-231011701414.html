@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sederhana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #007bff;
+        }
+        
+        h2 {
+            color: #007bff;
+        }
+        
+        .container {
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px hsla(0, 17%, 98%, 0.862);
+        }
+        
+        .form-label {
+            font-weight: bold;
+            color: white; /* Mengubah warna teks menjadi putih */
+        }
+        
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: hsl(210, 8%, 95%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Silahkan Masukan Akun Anda</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nama" class="form-label">Username:</label>
+                <input type="text" class="form-control" id="Username" placeholder="Masukkan nama Anda">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Password:</label>
+                <input type="email" class="form-control" id="Password" placeholder="Masukkan Password Anda">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</body>
+</html>
